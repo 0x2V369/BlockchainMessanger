@@ -1,5 +1,9 @@
 # BlockchainMessenger
 
+> [!NOTE]
+> This is stil work in progress
+
+
 ## BlockchainMessenger.sol 
   ### messenger idea:
   - A simple project to create a 'blockchain messenger' (note, couldnt really call it a messenger since only the owner of the contract can update the message)
@@ -26,5 +30,3 @@
   - streamline the contract for gas costs were possible
 
 
-> [!NOTE]
-> This is stil work in progress
