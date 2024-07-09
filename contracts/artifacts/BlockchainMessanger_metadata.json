@@ -78,11 +78,11 @@
 	},
 	"sources": {
 		"contracts/BlockchainMessanger.sol": {
-			"keccak256": "0x2c3a2304a760b8da57ca4a86947b5617619a11b705d256d575c22b64ffca60eb",
+			"keccak256": "0x262947da53950b3f87fa5eea39aa87b1c61af2630716a31588d0f7e0b25ee9a5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://39d971b0e9aa4fcaa98b8bd1907ab98037d4ac008a445a24c9a1e04e0d9244be",
-				"dweb:/ipfs/QmYu2Qtm2ehS5SVNcCvkvCjrXRSpWw56sNsSshPSfvzF8F"
+				"bzz-raw://ec8652b12d1c6510edfd56bc9b010000a1fcde964895ec2f78ad107cef085619",
+				"dweb:/ipfs/QmYBCP6tc4BFJJzvSsWMx3ktCYSnHhQxpyYW4KYps3wUfU"
 			]
 		}
 	},
