@@ -5,7 +5,7 @@ pragma solidity 0.8.15;
 /// @author 0x2V
 /// @title A simple contract to serve
 
-contract BlockchainMessanger{
+contract BlockchainMessenger{
 
     address owner;
     uint256 public counter;
