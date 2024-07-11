@@ -1,0 +1,113 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "counter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastMessage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_newMessage",
+						"type": "string"
+					}
+				],
+				"name": "updateLastMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "0x2V",
+			"kind": "dev",
+			"methods": {
+				"updateLastMessage(string)": {
+					"details": "first checks that the message sender is the owner of the contractthen checks if the message is not the same as the message already storedif first two checks are passed, variable 'lastMessage' is updatedif message updated counter is increased by 1"
+				}
+			},
+			"title": "A simple contract to serve",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"updateLastMessage(string)": {
+					"notice": "Store '_newMessage' in state variable lastMessage"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BlockchainMessenger.sol": "BlockchainMessenger"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BlockchainMessenger.sol": {
+			"keccak256": "0x6f1952bc653b0034aeb993a3d47e0f54d122138813fc5813105339b3add22ac7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d645446560ceafbeee7b4e5630c7c5d1549ea2c8e098c53599ef326eb34ec7ba",
+				"dweb:/ipfs/QmNrbNHULL19a1ubijDh5izEUXg65CepXTMjuET9ejbEvB"
+			]
+		}
+	},
+	"version": 1
+}

@@ -7,7 +7,7 @@ pragma solidity 0.8.15;
 
 contract BlockchainMessenger{
 
-    address owner;
+    address public immutable owner;
     uint256 public counter;
     string public lastMessage;
 
