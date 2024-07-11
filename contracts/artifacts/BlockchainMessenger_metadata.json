@@ -11,6 +11,31 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "newMessage",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "MessageUpdated",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "counter",
 				"outputs": [
@@ -68,7 +93,10 @@
 			"kind": "dev",
 			"methods": {
 				"updateLastMessage(string)": {
-					"details": "first checks that the message sender is the owner of the contractthen checks if the message is not the same as the message already storedif first two checks are passed, variable 'lastMessage' is updatedif message updated counter is increased by 1"
+					"details": "Updates the last message stored in the contract. Requirements: - The caller must be the contract owner. - The new message must be different from the current message.",
+					"params": {
+						"_newMessage": "The new message to store."
+					}
 				}
 			},
 			"title": "A simple contract to serve",
@@ -76,11 +104,7 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"updateLastMessage(string)": {
-					"notice": "Store '_newMessage' in state variable lastMessage"
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
@@ -101,11 +125,11 @@
 	},
 	"sources": {
 		"contracts/BlockchainMessenger.sol": {
-			"keccak256": "0x6f1952bc653b0034aeb993a3d47e0f54d122138813fc5813105339b3add22ac7",
+			"keccak256": "0x69affcdb46f84436c93cbc2501d4b0fb2d02f9351a71b6e74aa69ea31d26e34d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d645446560ceafbeee7b4e5630c7c5d1549ea2c8e098c53599ef326eb34ec7ba",
-				"dweb:/ipfs/QmNrbNHULL19a1ubijDh5izEUXg65CepXTMjuET9ejbEvB"
+				"bzz-raw://79db3e19a3143336fd5a5e7f765e50e666f594e7bfe68a3bb465bee5c6cb0c91",
+				"dweb:/ipfs/QmcrYgigFQPsLDcKWyMCZVNaV1dVAM9qXB76VTdW1jK1ie"
 			]
 		}
 	},
